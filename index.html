@@ -9,6 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <button id="open-menu-button"><i class="fas fa-cog"></i></button>
+
+    <div id="menu-overlay" class="menu-overlay">
+        <div id="customization-menu" class="customization-menu">
+            <button id="close-menu-button" class="close-button">X</button>
+            <h2>Configuracion</h2>
+            <div class="menu-section">
+                <h3>Tema</h3>
+                <div id="theme-toggle" class="theme-switch">
+                    <div class="switch-thumb"></div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h3>Idioma</h3>
+                <select id="language-select">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="profile-header">
             <img src="Imagenes/logo.jpg" alt="Foto de perfil de Naeki" class="profile-picture">
@@ -29,53 +51,54 @@
             <h2>Cosas Favoritas</h2>
             <div class="gallery-container">
                 <div class="gallery-item">
-                    <h3><i class="fab fa-linux"></i> Gnu/Linux</h3>
-                    <ul>
-                        <li><img src="https://www.shareicon.net/data/512x512/2015/09/16/101872_debian_512x512.png" alt="Debian"> Debian</li>
-                        <li><img src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png" alt="Arch Linux"> Arch</li>
-                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Fedora_icon_%282021%29.svg/2089px-Fedora_icon_%282021%29.svg.png" alt="Fedora"> Fedora</li>
-                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Linux_Mint_logo_without_wordmark.svg/1200px-Linux_Mint_logo_without_wordmark.svg.png" alt="Linux Mint"> Mint</li>
+                    <h3><i class="fab fa-linux"></i>Distribuciones Gnu/Linux</h3>
+                    <ul class="button-list">
+                        <li><a href="https://www.debian.org/" target="_blank" rel="noopener noreferrer"><img src="https://www.shareicon.net/data/512x512/2015/09/16/101872_debian_512x512.png" alt="Debian"> Debian</a></li>
+                        <li><a href="https://archlinux.org/" target="_blank" rel="noopener noreferrer"><img src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png" alt="Arch Linux"> Arch</a></li>
+                        <li><a href="https://fedoraproject.org/" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Fedora_icon_%282021%29.svg/2089px-Fedora_icon_%282021%29.svg.png" alt="Fedora"> Fedora</a></li>
+                        <li><a href="https://linuxmint.com/" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Linux_Mint_logo_without_wordmark.svg/1200px-Linux_Mint_logo_without_wordmark.svg.png" alt="Linux Mint"> Mint</a></li>
                     </ul>
                 </div>
                 <div class="gallery-item">
                     <h3><i class="fas fa-gamepad"></i> Boomer Shooters</h3>
-                    <ul>
-                        <li><img src="https://cdn2.steamgriddb.com/icon_thumb/1ff655edaac1ca6a033c5290110d7a55.png" alt="ULTRAKILL"> ULTRAKILL</li>
-                        <li><img src="https://cdn2.steamgriddb.com/icon_thumb/729ae54261113feabfd45c500c24d88c.png" alt="Cruel"> Cruel</li>
-                        <li><img src="https://cdn2.steamgriddb.com/icon_thumb/6998ec64248ca3d8bdee32ad6fab9748.png" alt="Dusk"> Dusk</li>
-                        <li><img src="Imagenes/P.png" alt="Postal Brain Damaged"> Postal Brain Damaged</li>
+                    <ul class="button-list">
+                        <li><a href="http://devilmayquake.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn2.steamgriddb.com/icon_thumb/1ff655edaac1ca6a033c5290110d7a55.png" alt="ULTRAKILL"> ULTRAKILL</a></li>
+                        <li><a href="https://store.steampowered.com/app/2689470/CRUEL/" target="_blank" rel="noopener noreferrer"><img src="https://cdn2.steamgriddb.com/icon_thumb/729ae54261113feabfd45c500c24d88c.png" alt="Cruel"> Cruel</a></li>
+                        <li><a href="https://store.steampowered.com/app/519860/DUSK/" target="_blank" rel="noopener noreferrer"><img src="https://cdn2.steamgriddb.com/icon_thumb/6998ec64248ca3d8bdee32ad6fab9748.png" alt="Dusk"> Dusk</a></li>
+                        <li><a href="https://store.steampowered.com/app/1359980/POSTAL_Brain_Damaged/" target="_blank" rel="noopener noreferrer"><img src="Imagenes/P.png" alt="Postal Brain Damaged"> Brain Damaged</a></li>
                     </ul>
                 </div>
                 <div class="gallery-item">
-                    <h3><i class="fas fa-music"></i> Videojuegos Rítmicos</h3>
-                    <ul>
-                        <li><img src="https://cdn2.steamgriddb.com/icon_thumb/a4c00f058d5bc701f2ef2dc3d8cfe76a.png" alt="Osu!"> Osu!</li>
-                        <li><img src="https://cdn2.steamgriddb.com/icon_thumb/0fff3d32af80b4fa5a585d6fb54828c5.png" alt="Quaver"> Quaver</li>
-                        <li><img src="Imagenes/bb.png" alt="Beatblock"> Beatblock</li>
-                        <li><img src="https://cdn2.steamgriddb.com/icon_thumb/89eb867fe15391aa6f266e919be9043a.png" alt="FNF"> FNF</li>
+                    <h3><i class="fas fa-music"></i>Juegos Rítmicos</h3>
+                    <ul class="button-list">
+                        <li><a href="https://osu.ppy.sh/" target="_blank" rel="noopener noreferrer"><img src="https://cdn2.steamgriddb.com/icon_thumb/a4c00f058d5bc701f2ef2dc3d8cfe76a.png" alt="Osu!"> Osu!</a></li>
+                        <li><a href="https://quavergame.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn2.steamgriddb.com/icon_thumb/0fff3d32af80b4fa5a585d6fb54828c5.png" alt="Quaver"> Quaver</a></li>
+                        <li><a href="https://bubbletabby.itch.io/" target="_blank" rel="noopener noreferrer"><img src="Imagenes/bb.png" alt="Beatblock"> Beatblock</a></li>
+                        <li><a href="https://ninja-muffin24.itch.io/funkin" target="_blank" rel="noopener noreferrer"><img src="https://cdn2.steamgriddb.com/icon_thumb/89eb867fe15391aa6f266e919be9043a.png" alt="FNF"> FNF</a></li>
                     </ul>
                 </div>
                 <div class="gallery-item">
-                    <h3><i class="fas fa-code"></i> Programación</h3>
-                    <ul>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"> HTML</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"> CSS</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="LUA"> LUA</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haxe/haxe-original.svg" alt="Haxe"> Haxe</li>
+                    <h3><i class="fas fa-code"></i> Lenguajes de Programación</h3>
+                    <ul class="button-list">
+                        <li><a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"> HTML</a></li>
+                        <li><a href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"> CSS</a></li>
+                        <li><a href="https://www.lua.org/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="LUA"> LUA</a></li>
+                        <li><a href="https://haxe.org/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haxe/haxe-original.svg" alt="Haxe"> Haxe</a></li>
                     </ul>
                 </div>
             </div>
         </section>
         
         <ul class="social-icons">
-            <li><a href="https://x.com/MolkXd14928"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.twitch.tv/naekixd"><i class="fab fa-twitch"></i></a></li>
-            <li><a href="https://www.github.com/@NaekiRealXD"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.tiktok.com/@_._.naeki._._"><i class="fab fa-tiktok"></i></a></li>
-            <li><a href="https://www.reddit.com/user/Great-Horse8078/"><i class="fab fa-reddit"></i></a></li>
-            <li><a href="https://discord.com/invite/JhgJuYRcuP"><i class="fab fa-discord"></i></a></li>
-            <li><a href="https://www.youtube.com/@NaekiXD"><i class="fab fa-youtube"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://x.com/A_Teto_lover"><i class="fab fa-twitter"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/naekixd"><i class="fab fa-twitch"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.github.com/@NaekiRealXD"><i class="fab fa-github"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@_._.naeki._._"><i class="fab fa-tiktok"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/user/Great-Horse8078/"><i class="fab fa-reddit"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/JhgJuYRcuP"><i class="fab fa-discord"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@NaekiXD"><i class="fab fa-youtube"></i></a></li>
         </ul>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
