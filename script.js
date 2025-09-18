@@ -118,10 +118,23 @@ function createFlyingFlags() {
     }
 }
 
+function addHatToProfile() {
+    if (body.classList.contains('special-theme')) {
+        const profileContainer = document.querySelector('.profile-picture-container');
+
+        if (profileContainer) {
+            const hat = document.createElement('img');
+            hat.src = 'Imagenes/gorro.png';
+            hat.alt = 'Gorro';
+            hat.classList.add('hat');
+            profileContainer.appendChild(hat);
+
+            hat.style.display = 'block';
+        }
+    }
+}
+
 checkSpecialDate();
 addSpecialThemeText();
 createFlyingFlags();
-
-setTimeout(() => {
-    body.classList.remove('no-transition');
-}, 10);
+addHatToProfile();

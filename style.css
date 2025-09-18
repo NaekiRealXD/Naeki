@@ -222,14 +222,28 @@ body {
     flex-wrap: wrap;
 }
 
+.profile-picture-container {
+    position: relative;
+    display: inline-block;
+}
+
 .profile-picture {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-right: 24px; 
-    border: 0;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); 
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture-container .hat {
+    position: absolute;
+    top: -45px; 
+    left: -10px; 
+    width: 120px; 
+    transform: rotate(-15deg); 
+    z-index: 10;
+    display: none;
 }
 
 .profile-info h1 {
