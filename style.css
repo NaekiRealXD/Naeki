@@ -30,7 +30,7 @@
     --card-background: rgba(253, 161, 161, 0.8);
     --card-border: rgba(0, 0, 0, 0.8);
     --subtitle-color: #000000;
-    --link-background: rgba(255, 255, 255, 0.6);
+    --link-background: rgb(255, 255, 255);
     --link-hover-background: rgba(255, 255, 255, 0.8);
     --box-shadow-color: rgba(0, 0, 0, 0.2);
     --box-shadow-hover-color: rgba(0, 0, 0, 0.3);
