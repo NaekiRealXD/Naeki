@@ -24,10 +24,9 @@
     --social-icon-box-shadow-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Tema especial para el 18 de septiembre */
 .special-theme {
-    --background-color: #ba67ff; /* Amarillo brillante */
-    --text-color: #000000; /* Azul oscuro */
+    --background-color: #ba67ff;
+    --text-color: #000000;
     --card-background: rgba(253, 161, 161, 0.8);
     --card-border: rgba(0, 0, 0, 0.8);
     --subtitle-color: #000000;
