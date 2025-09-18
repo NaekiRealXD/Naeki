@@ -100,14 +100,27 @@ function addSpecialThemeText() {
             specialText.style.marginTop = '10px';
             specialText.style.textAlign = 'center';
 
-            // Insertar el texto debajo del subtítulo
             subtitle.insertAdjacentElement('afterend', specialText);
+        }
+    }
+}
+
+function createFlyingFlags() {
+    if (body.classList.contains('special-theme')) {
+        for (let i = 0; i < 50; i++) {
+            const flag = document.createElement('div');
+            flag.textContent = '🇨🇱';
+            flag.classList.add('flying-flag');
+            flag.style.left = `${Math.random() * 100}vw`;
+            flag.style.animationDelay = `${Math.random() * 5}s`;
+            document.body.appendChild(flag);
         }
     }
 }
 
 checkSpecialDate();
 addSpecialThemeText();
+createFlyingFlags();
 
 setTimeout(() => {
     body.classList.remove('no-transition');

@@ -393,3 +393,23 @@ body:not(.no-transition) {
 .error-message.show {
     display: block;
 }
+
+.flying-flag {
+    position: fixed;
+    top: 100%;
+    font-size: 2rem;
+    animation: flyUp 10s linear infinite;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+@keyframes flyUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
