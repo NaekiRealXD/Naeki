@@ -1,5 +1,9 @@
 const body = document.body;
 
+document.addEventListener('DOMContentLoaded', () => {
+    body.classList.add('maintenance-mode');
+});
+
 const openMenuButton = document.getElementById('open-menu-button');
 const menuOverlay = document.getElementById('menu-overlay');
 const customizationMenu = document.getElementById('customization-menu');
